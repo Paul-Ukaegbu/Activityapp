@@ -36,7 +36,7 @@ namespace coolproject.Controllers
         [HttpGet("logout")]//logout button
         public IActionResult Logout(){
             HttpContext.Session.Clear();
-            return Redirect("/");//once clicked it redirects to login page
+            return Redirect("/");//once clicked it redirects to login
         }
 
 
