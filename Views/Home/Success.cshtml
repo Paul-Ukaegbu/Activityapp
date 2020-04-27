@@ -1,0 +1,19 @@
+@model newActivity
+
+<h1>Dojo Activity Center</h1>
+<p>Welcome, @ViewBag.FirstName</p>
+<a asp-action="/logout" asp-controller="Home">LogOut</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Activity</th>
+            <th scope="col">Date and Time</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Event Coordinator</th>
+            <th scope="col">No. of Participants</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+</table>
+<a asp-action="New" class="btn btn-primary">Add New Activity</a>

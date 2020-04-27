@@ -1,0 +1,15 @@
+@model newActivity ;
+
+<h1>Dojo Activity Center </h1>
+<a asp-action="Index" asp-controller="Activity">Home</a>
+<a asp-action="Logout" asp-controller="Home">LogOut</a>
+
+
+<h1>@Model.Title</h1>
+
+<h2>Event Coordinator: @ViewBag.FirstName</h2>
+<h2>Date: @Model.Date</h2>
+
+<h2>Description: </h2>
+<p>@Model.Description</p>
+
